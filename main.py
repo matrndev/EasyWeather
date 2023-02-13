@@ -28,6 +28,7 @@ def search():
         alert.exec_()
         return
     r = requests.get(url="https://MaTYAPI.matymt.repl.co/weather/" + textbox.text())
+    # TODO: API not working!
     data = r.json()
     status = data["success"]
     if status == False:
