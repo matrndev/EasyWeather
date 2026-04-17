@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import *
+from PyQt5.QtCore import Qt
 import requests
 import webbrowser
 # Create app and set name
@@ -14,7 +15,7 @@ textbox = QLineEdit()
 textbox.setPlaceholderText("Place")
 label = QLabel("EasyWeather")
 label.setStyleSheet("font-size: 40px;")
-# label.setAlignment(Qt.AlignCenter) not working
+label.setAlignment(Qt.AlignCenter)
 layout.addWidget(label)
 layout.addWidget(textbox)
 layout.addWidget(button)
